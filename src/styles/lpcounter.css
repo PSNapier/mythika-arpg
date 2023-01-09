@@ -1,0 +1,231 @@
+/* old */
+
+#pillContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: .3em;
+}
+
+.pill, .pillSelected {
+	all: unset;
+	user-select: none;
+	margin: 0em .3em;
+	margin-bottom: .5em;
+	padding: .1em;
+	font-size: 1em;
+	/* font-weight: 600; */
+	white-space: nowrap;
+	border-radius: .5em;
+	border: .1em solid var(--color-accent); 
+	transition: 0.05s;
+}
+ 
+.pill {
+	color: var(--color-accent);
+}
+ 
+.pillSelected,
+.pill:hover,
+.pillSelected:hover {
+	background: var(--color-accent);
+	color: var(--color-accent-light);
+}
+
+.pill:active, 
+.pillSelected:active {
+	background: var(--color-accent-light);
+}
+
+#output {
+	color: var(--color-dark);
+	text-align: center;
+}
+
+select {
+	font-family: var(--font);
+	text-transform: capitalize;
+}
+
+/* new */
+
+#lp-counter {
+	flex: 1;
+	background-color: var(--color-dark);
+	background-image: url('../assets/img-randomizer-bg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.box {
+	background-color: rgba(241, 241, 241, 0.8);
+	border: 1px solid rgba(0, 0, 0, .4);
+	backdrop-filter: blur(.1em);
+}
+
+.box + .box {
+	margin-top: 1em;
+}
+
+#output-wrapper {
+	padding: 1.2em;
+}
+
+#output-button-wrapper {
+	display: flex;
+	flex-wrap: column wrap;
+	justify-content: space-evenly;
+}
+
+#output {
+	padding: 1.2em;
+	min-height: 120px;
+	border: 1.5px solid rgba(0, 0, 0, .4);
+	border-radius: .5em;
+}
+
+#output-button-wrapper + #output {
+	margin-top: 1.2em;
+}
+
+#wrapperOptions {
+	display: flex;
+	justify-content: space-between;
+}
+
+#pillContainer {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 25%;
+	min-width: fit-content;
+}
+
+#options-spacer {
+	border-right: 1px solid rgba(0, 0, 0, .4);
+	margin: 0em 1em;
+}
+
+#selectContainer {
+	display: flex;
+	flex-flow: column wrap;
+	width: 75%;
+}
+
+.container-header {
+	margin-bottom: .3em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: var(--color-dark);
+}
+
+.pill, .pillSelected {
+	margin: 0em 0em;
+	border-radius: 0px;
+}
+
+.pill-spacer + .pill-spacer {
+	margin-top: .6em;
+}
+
+select {
+	/* margin: .3em 0em; */
+	border-radius: 5px;
+	padding: .1em .5em;
+	font-size: .8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+select + select {
+	margin-top: .6em;
+}
+
+button {
+	font-size: 1.1em;
+}
+
+/* lp-counter */
+
+.box {
+	padding: 1.2em;
+}
+
+#lp-counter-mythikan-id {
+	padding-block: .1em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.mythikan-id-cell {
+	padding: .5em;
+	padding-left: 0em;
+}
+
+.lp-counter-header {
+	font-weight: bold;
+}
+
+input[type="text"] {
+	height: 2em;
+	width: 16%;
+	vertical-align: 30%;
+}
+
+input[type="checkbox"] {
+	height: 1.5em;
+	width: 1.5em;
+	margin-right: .5em;
+	vertical-align: -15%;
+}
+
+label {
+	user-select: none;
+	transition: 150ms;
+}
+
+label:active,
+label:hover,
+label:focus {
+	color: var(--color-accent-light);
+}
+
+label + label {
+	margin-left: .5em;
+}
+
+.hr {
+	width: 100%;
+	margin-block: .5em;
+	border-bottom: solid 1px var(--color-dark);
+}
+
+.box-row + .box-row {
+	margin-top: .5em;
+}
+
+#input-word-count {
+	width: 50%;
+}
+
+#lp-counter-meta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#lp-counter-meta div {
+	width: auto;
+	text-align: center;
+}
+
+#lp-counter-meta input[type="text"] {
+	width: 50%;
+}
