@@ -1,6 +1,7 @@
 {
   "require": {
     "vlucas/phpdotenv": "~5",
+    "bdk/debug": "~3",
     "sendgrid/sendgrid": "~7"
   }
 }
