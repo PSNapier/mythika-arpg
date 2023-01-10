@@ -1,4 +1,4 @@
 <?php
-
-header("Location: index.php");
-die();
+header_remove();
+header("Location: /");
+exit();

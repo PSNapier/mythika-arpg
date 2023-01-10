@@ -17,6 +17,14 @@ $dotenv->safeLoad();
 include_once 'pages/header.php';
 
 // ROUTING PAGES
+// $debug->info($_GET['page']);
+// if (isset($_GET["page"])) {
+// 	include_once $_GET["page"];
+// } 
+// else {
+// 	include_once 'pages/landing.php';
+// }
+
 include_once 'includes/routing.inc.php';
 
 // FOOTER
