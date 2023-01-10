@@ -23,12 +23,12 @@ function runRoutes() {
 }
 
 // main
-route('/', function () { include_once 'pages/landing.php'; });
-route('/email-test', function () { include_once 'pages/email-test.php'; });
-route('/login', function () { include_once 'pages/login.php'; });
+route('/', function () { include_once '../pages/landing.php'; });
+route('/email-test', function () { include_once '../pages/email-test.php'; });
+route('/login', function () { include_once '../pages/login.php'; });
 // rollers
-route('/breeding-roller', function () { include_once 'pages/rollers/breeding-roller.php'; });
-route('/lp-counter', function () { include_once 'pages/rollers/lp-counter.php'; });
-route('/randomizer', function () { include_once 'pages/rollers/randomizer.php'; });
+route('/breeding-roller', function () { include_once '../pages/rollers/breeding-roller.php'; });
+route('/lp-counter', function () { include_once '../pages/rollers/lp-counter.php'; });
+route('/randomizer', function () { include_once '../pages/rollers/randomizer.php'; });
 
 runRoutes();

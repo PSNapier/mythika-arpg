@@ -1,6 +1,6 @@
 <?php
 // COMPOSER
-require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 // CONSOLE LOG DEBUGGING
 $debug = new \bdk\Debug([
@@ -10,11 +10,11 @@ $debug = new \bdk\Debug([
 ]);
 
 // DOT ENV
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->safeLoad();
 
 // HEADER
-include_once 'pages/header.php';
+include_once '../pages/header.php';
 
 // ROUTING PAGES
 // $debug->info($_GET['page']);
@@ -25,8 +25,8 @@ include_once 'pages/header.php';
 // 	include_once 'pages/landing.php';
 // }
 
-include_once 'includes/routing.inc.php';
+include_once '../includes/routing.inc.php';
 
 // FOOTER
-include_once 'pages/footer.php';
+include_once '../pages/footer.php';
 ?>

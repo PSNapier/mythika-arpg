@@ -10,9 +10,9 @@
 	<meta http-equiv="Expires" content="0">
 
 	<title>Mythika ARPG</title>
-	<link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+	<link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png">
 
-	<link rel="stylesheet" href="../styles/main.css?v=<?php echo time(); ?>">
+	<link rel="stylesheet" href="/styles/main.css?v=<?php echo time(); ?>">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 	<!-- <script src="/jquery-3.6.0.min.js"></script> -->
@@ -28,7 +28,7 @@
 </div>
 	
 <nav>
-	<a href="/"><img src="/assets/img-header.png" alt="Headshot of a Mythikan with red banner"></a>
+	<a href="/"><img src="../assets/img-header.png" alt="Headshot of a Mythikan with red banner"></a>
 
 	<ion-icon id="dropdown-button" name="menu" onclick="dropdownButton()"></ion-icon>
 
