@@ -10,6 +10,7 @@
 	<meta http-equiv="Expires" content="0">
 
 	<title>Mythika ARPG</title>
+	<link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
 
 	<link rel="stylesheet" href="../styles/main.css?v=<?php echo time(); ?>">
 

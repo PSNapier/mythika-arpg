@@ -1,5 +1,5 @@
 <?php 
-
+// VANILLA
 $routes = [];
 function route(string $path, callable $callback) {
 	global $routes;
@@ -30,3 +30,5 @@ route('/login', function () { include_once 'pages/login.php'; });
 route('/breeding-roller', function () { include_once 'pages/rollers/breeding-roller.php'; });
 route('/lp-counter', function () { include_once 'pages/rollers/lp-counter.php'; });
 route('/randomizer', function () { include_once 'pages/rollers/randomizer.php'; });
+
+runRoutes();

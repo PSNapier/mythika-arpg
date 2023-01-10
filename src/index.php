@@ -18,7 +18,6 @@ include_once 'pages/header.php';
 
 // ROUTING PAGES
 include_once 'includes/routing.inc.php';
-runRoutes();
 
 // FOOTER
 include_once 'pages/footer.php';
