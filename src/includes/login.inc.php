@@ -1,4 +1,6 @@
 <?php
-header_remove();
-header("Location: /");
-exit();
+// echo 'includes file present...';
+if (!empty($_POST)) {
+	header('Location: /');
+	exit();
+}

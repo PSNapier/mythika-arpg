@@ -1,4 +1,6 @@
 <?php
+	include_once '../includes/login.inc.php';
+
 	// if (isset($_POST)) {
 	// 	echo $_POST["username"] . '<br>' . $_POST["password"];
 
@@ -11,10 +13,10 @@
 ?>
 
 <section class="content">
-	<form action="login.inc.php" method="POST">
+	<form method="POST">
 		<input type="text" name="username" placeholder="Username/Email...">
 		<input type="password" name="password" placeholder="Password...">
 		<button type="submit" name="submit">Log In</button>
-		<!-- <br><br><a href="../reset">Forgot your password? Click here to go to password reset.</a> -->
+		<!-- <br><br><a href="../reEset">Forgot your password? Click here to go to password reset.</a> -->
 	</form>
 </section>

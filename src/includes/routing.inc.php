@@ -22,6 +22,17 @@ function runRoutes() {
 	}
 }
 
+// NOTE: ideally I would add in some kind of recursive array populator thingy that would go through the entire 'pages' directory and create a dictionary of page locations that could be accessed by the .php file names.
+$routeDictionary = ['test'];
+$paths = ['test'];
+$dir = new DirectoryIterator('../pages');
+foreach ($dir as $fileinfo) {
+    if ($fileinfo->isDir() && !$fileinfo->isDot()) {
+       array_push($paths, $fileinfo->getFilename());
+    }
+}
+$debug->info($paths);
+
 // main
 route('/', function () { include_once '../pages/landing.php'; });
 route('/email-test', function () { include_once '../pages/email-test.php'; });
